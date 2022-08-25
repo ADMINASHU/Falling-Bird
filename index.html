@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Falling Bird</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="game">
+            <div class="block" id="block"></div>
+            <div id="hole"></div>
+            <div id="bird"><img src="./Assets/Images/bird.png" alt="bird"></div>
+        </div>
+        <div id="result">
+            <h1>Game Over</h1>
+            <p id="text">3r35</p>
+            <button id="btn" onclick="restart()">Restart</button>
+        </div>
+        <p id="highScore">High Score: </p>
+      
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
