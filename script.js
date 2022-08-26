@@ -47,6 +47,8 @@ const fall = setInterval(() => {
 },10);
 
 window.addEventListener('keydown',hop)
+window.addEventListener('touchstart',hop)
+
 
 function hop(){
     jumping = 1;
