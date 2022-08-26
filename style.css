@@ -141,11 +141,4 @@ body {
 #text {
   font-size: 2rem;
   color: seashell;
-}
-
-@media screen and (max-width: 550px) {
-  #game {
-    height: 95%;
-    width: 95%;
-  }
 }/*# sourceMappingURL=style.css.map */
