@@ -5,7 +5,7 @@ const text = document.getElementById('text');
 const highScore = document.getElementById('highScore');
 
 let score = 0;
-// let hScore = 0;
+let hScore = localStorage.getItem('SaveScore')
 let jumping = 0;
 
 
@@ -16,6 +16,9 @@ function randomHole() {
     const random = -((Math.random()*56)+24);
     hole.style.top = random+"vh"; 
     score++;
+    if (score > hScore) {
+        localStorage.setItem('SaveScore',score);
+    }
 }
 
 
@@ -39,7 +42,7 @@ const fall = setInterval(() => {
     if ((birdBottom < 0)||(blockLeft < birdLeft*1.298)&&(blockLeft > birdLeft)&&((birdBottom < hBottom)||(birdBottom > hTop))){
         result.style.display = "grid";
         text.innerText = `Your final score is : ${score}`;
-        highScore.innerText = `High Score: ${score}`;
+        highScore.innerText = `High Score: ${hScore}`;
         game.style.display = "none";
         // score = 0;
     }             

@@ -141,4 +141,9 @@ body {
 #text {
   font-size: 2rem;
   color: seashell;
+}
+
+#highScore {
+  color: white;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
